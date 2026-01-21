@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Little Hearts Fashions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #fff5f8;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff6f91, #ff9671);
+            color: white;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url('https://images.unsplash.com/photo-1521334884684-d80222895322') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            padding: 12px 30px;
+            border: none;
+            background: #ff6f91;
+            color: white;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: #ff4f79;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ff6f91;
+        }
+
+        section p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 16px;
+        }
+
+        /* Services */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-box h3 {
+            margin-bottom: 10px;
+            color: #ff6f91;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Contact */
+        .contact {
+            background: #ffe1ea;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+
+        .contact button {
+            width: 100%;
+            padding: 12px;
+            background: #ff6f91;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #ff4f79;
+        }
+
+        /* Footer */
+        footer {
+            background: #ff6f91;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Little Hearts Fashions</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h2>Designing Dreams with Love</h2>
+        <p>Kids | Women | Custom Fashion Designs</p>
+        <button>Explore Collection</button>
+    </div>
+</div>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Little Hearts Fashions is a creative fashion studio specializing in elegant,
+        comfortable, and trendy designs for kids and women. We design with passion,
+        precision, and love in every stitch.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-box">
+            <h3>Kids Wear</h3>
+            <p>Adorable and comfortable outfits for every occasion.</p>
+        </div>
+        <div class="service-box">
+            <h3>Women’s Wear</h3>
+            <p>Stylish, ethnic, and modern designs tailored perfectly.</p>
+        </div>
+        <div class="service-box">
+            <h3>Custom Stitching</h3>
+            <p>Personalized designs crafted just for you.</p>
+        </div>
+        <div class="service-box">
+            <h3>Fashion Consultation</h3>
+            <p>Expert advice for your perfect fashion look.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Our Collection</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+        
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Little Hearts Fashions</p>
+</footer>
+
+</body>
+</html>
